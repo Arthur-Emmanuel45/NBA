@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: ghostwhite;
+}
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    height: 6em;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style-type: none;
+}
+#header-nav li:hover {
+    border-top: 1px solid #b10b0b;
+    padding: 5px;
+    color: #b10b0b
+}
+#header-nav {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.search-socials {
+    display: flex;
+}
+.fa, .fa-brands {
+    font-size: 1.3em;
+    margin: 5px;
+}
+.fa-search {
+    font-size: 1.3em;
+    padding: 5px;
+    color: grey;
+    cursor: pointer;
+}
+.fa-twitter {
+    color: #2379f8
+}
+.fa-facebook {
+    color: blue
+}
+.fa-youtube {
+    color: #d80000
+}
+#socials {
+    display: flex;
+    align-items: center;
+}
+/* INTRO */
+#intro {
+    background-image: url('https://st.depositphotos.com/2012693/1943/i/600/depositphotos_19433019-stock-photo-strong-quill-on-steel-plane.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.bg-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    background-color: rgba(184, 24, 9, 0.5);
+}
+h1 {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.intro-quote {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+/* HEAD POST SYTLES */
+#head-post-container {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.head-left-post {
+    display: flex;
+}
+.head-post-img {
+    max-width: 50%;
+}
+.head-post {
+    font-weight: 700;
+    font-size: 20px;
+    width: 95%;
+}
+#head-post-container {
+    gap: 10px;
+    padding: 0 10%;
+}
+#head-left-post-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 10px 0;
+}
+.left-post {
+    display: flex;
+    gap: 6px;
+}
+.head-item-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.head-item-container .title {
+    display: flex;
+    background-color: #5c0404;
+    gap: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+    letter-spacing: 4px; 
+    width: 70%;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+}
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.learn-more {
+    font-style: italic;
+    color: #5c0404;
+    font-weight: 700;
+    font-size: 18px;
+}
+.learn-more:hover {
+    color: #f80505;
+}
+.fa-arrow-right {
+    font-size: 12px;
+}
+.learn-more:active {
+    color: #d80000;
+}
+.authur {
+    font-family: cursive;
+    font-size: 11px;
+    text-align: center;
+    font-style: italic;
+}
+#head-right-post {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    width: 60%;
+    background-image: url('https://images.stockcake.com/public/1/5/4/15453db8-2e1f-446c-aee1-5ee7de15a258_large/technology-in-hand-stockcake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#head-right-post .title {
+    display: flex;
+    gap:5px;
+    cursor: pointer;
+    color: white;
+    background-color: hsla(0, 1%, 16%, 0.5);
+    width: 25%;
+    align-items: center;
+    padding: 5px;
+}
+.rigt-post-header {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.read-more {
+    width: 30%;
+    border: none;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+.read-more:hover {
+    color: red;
+}
+.read-more:active {
+    color: #fff;
+}
+#head-right-post .authur {
+    text-align: left;
+    margin-top: 5px;
+}
+/* TECHNOLOGY POST*/
+h2 {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.underline-header {
+    width: 10%;
+    height: 3px;
+    background-color: #000;
+}
+.post-container {
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.post-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 50%;
+    width: 20%
+}
+.post-item-container img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.post-item-container p {
+    width: 75%;
+}
+/* EVENT */
+#event-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.event-side-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.event-side-items {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.margin-top {
+    margin-top: 10px;
+    border-top: 1px solid #5c0404;
+    padding-top: 10px;
+}
+.event-side-items img,.event-middle-container img {
+    width: 100%;
+}
+.event-middle-container {
+    background-image: url('https://img.freepik.com/free-photo/handsome-man-orange-jacket-posing-outdoors_23-2148448918.jpg?t=st=1720531661~exp=1720535261~hmac=e568c37509c25c41268941241520c47da3db0dc23903420a0c2f233bc8e0fbf7&w=360');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+#middle-tittle {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.middle-detiles {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.date-middle {
+    margin-top: 20px;
+}
+#middle-button {
+    width: 30%;
+    padding: 5px;
+    margin: 20px 0;
+    background-color: #5c0404;
+    border: none;
+    cursor: pointer;
+    color: #fff;  
+}
+.left-border {
+    border-right: 1px solid #5c0404;
+    padding-right: 10px;
+}
+.right-border {
+    border-left: 1px solid #5c0404;
+    padding-left: 10px;
+}
+h6 {
+    font-size: 1.2em;
+}
+.detiles {
+    font-family: math;
+    margin-top: 10px;
+}
+.date {
+    font-size: 14px;
+    font-style: oblique;
+    margin-top: 20px;
+}
+/* BUSINESS POST */
+#video-posts {
+    display: flex;
+    padding: 0 9em;
+    gap: 10px;
+}
+#video-posts div:nth-child(1) {
+    width: 40%;
+}
+#video-posts div:nth-child(1) img {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.business-h4 {
+    background-color: #5c0404;
+    width: 30%;
+    color: #fff;
+    padding: 5px;
+    margin-top: -5px;
+}
+#video-posts div:nth-child(1) p.authur {
+    text-align: left;
+    margin-top: 10px;
+    color: #5c0404;
+}
+.business-post-msg {
+    margin-top: 20px;
+    width: 80%;
+}
+.view-more-button {
+    margin: 10px 25%;
+    padding: 5px;
+    background-color: brown;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff
+}
+video {
+    width: 60%;
+    height: 100%;
+}
+/* FOOTER */
+footer {
+    background-color: #555555;
+    color: #fff;
+}
+#footer-nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+}
+#footer-items-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 30px;
+}
+h5 {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+.footer-socials a{
+    font-size: 20px;
+}
+#footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 20px;
+}
+#footer-nav li a {
+    color: #fff;
+}
+#footer-nav li a:hover {
+    color: #2379f8;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links a {
+    color: #fff;
+    font-size: 20px;
+}
+.footer-links a:hover {
+    color: #2379f8;
+}
+.about {
+    width: 35%;
+}
+.about p {
+    letter-spacing: 1px;
+}
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
