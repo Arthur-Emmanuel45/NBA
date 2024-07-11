@@ -11,20 +11,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10px;
+    padding: 0 10px;
     height: 6em;
+    box-shadow: 0px 2px 5px 5px #aaaaaa;
+    margin-bottom: 5px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: ghostwhite;
 }
 a {
     text-decoration: none;
-    color: #000;
 }
 li {
     list-style-type: none;
 }
-#header-nav li:hover {
+#header-nav li a {
+    color: #000;
     border-top: 1px solid #b10b0b;
-    padding: 5px;
-    color: #b10b0b
+    transition: border-top-width 300ms linear;
+}
+#header-nav li a:hover {
+    color: #b10b0b;
+    border-top-width: 5px;
 }
 #header-nav {
     display: flex;
@@ -32,6 +42,11 @@ li {
     align-items: center;
     justify-content: center;
     font-size: 1.3em;
+}
+input[type='search'] {
+    border: 1px solid #5c0404;
+    border-radius: 20px;
+    padding: 5px;
 }
 .search-socials {
     display: flex;
@@ -75,6 +90,7 @@ li {
     gap: 10px;
     height: 100%;
     background-color: rgba(184, 24, 9, 0.5);
+    margin-top: 103px;
 }
 h1 {
     color: #fff;
@@ -166,7 +182,7 @@ h4 {
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0 5px;
     width: 60%;
     background-image: url('https://images.stockcake.com/public/1/5/4/15453db8-2e1f-446c-aee1-5ee7de15a258_large/technology-in-hand-stockcake.jpg');
@@ -187,6 +203,7 @@ h4 {
 .rigt-post-header {
     font-weight: 700;
     font-size: 1.5em;
+    margin-top: 20px;
 }
 .read-more {
     width: 30%;
@@ -196,6 +213,7 @@ h4 {
     color: #fff;
     cursor: pointer;
     padding: 5px;
+    margin-top: 20px;
 }
 .read-more:hover {
     color: red;
@@ -275,10 +293,15 @@ h2 {
     background-size: cover;
     background-position: center;
     width: 45%;
+    color: #fff;
+}
+.bg-middle-overlay {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
 }
 #middle-tittle {
     font-size: 22px;
@@ -369,7 +392,7 @@ video {
 }
 /* FOOTER */
 footer {
-    background-color: #555555;
+    background-color: #9a9a9a;
     color: #fff;
 }
 #footer-nav-container {
@@ -388,10 +411,13 @@ footer {
 h5 {
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 20px;
+    margin: 0;
 }
 .footer-socials a{
     font-size: 20px;
+}
+.footer-socials p {
+    margin: 5px 0;
 }
 #footer-nav {
     display: flex;
@@ -408,7 +434,7 @@ h5 {
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .footer-links a {
     color: #fff;
@@ -427,5 +453,5 @@ h5 {
     display: flex;
     justify-content: space-between;
     padding: 20px 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(59, 59, 59, 0.2);
 }
