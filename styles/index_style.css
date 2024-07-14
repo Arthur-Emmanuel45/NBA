@@ -96,6 +96,9 @@ h1 {
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+h4 {
+    color: #fff;
+}
 .intro-quote {
     color: #fff;
     font-weight: 700;
@@ -135,6 +138,8 @@ h1 {
 .left-post {
     display: flex;
     gap: 6px;
+    border-bottom: 1px solid #5c0404;
+    padding-bottom: 10px;
 }
 .head-item-container {
     padding: 5px;
@@ -223,11 +228,11 @@ h4 {
 }
 #head-right-post .authur {
     text-align: left;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 /* TECHNOLOGY POST*/
 h2 {
-    margin-top: 10px;
+    margin-top: 20px;
     letter-spacing: 2px;
     font-size: 14px;
     padding: 5px;
@@ -251,7 +256,8 @@ h2 {
     align-items: center;
     gap: 15px;
     max-width: 50%;
-    width: 20%
+    width: 20%;
+    box-shadow: 1px 2px 5px #9a9a9a;
 }
 .post-item-container img {
     width: 100%;
@@ -389,6 +395,7 @@ h6 {
 video {
     width: 60%;
     height: 100%;
+    z-index: -1;
 }
 /* FOOTER */
 footer {
@@ -436,6 +443,11 @@ h5 {
     flex-direction: column;
     gap: 10px;
 }
+.footer-links div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
 .footer-links a {
     color: #fff;
     font-size: 20px;
@@ -450,8 +462,152 @@ h5 {
     letter-spacing: 1px;
 }
 #copyright {
-    display: flex;
-    justify-content: space-between;
     padding: 20px 10px;
     background-color: rgba(59, 59, 59, 0.2);
+}
+.copyright-text {
+    text-align: center;
+}
+.legal_links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    header {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    #header-nav {
+        order: 3;
+        margin: auto;
+    }
+    .search-socials {
+        order: 2;
+    }
+    .intro-quote {
+        width: 60%;
+    }
+    #head-post-container {
+        padding: 0 2%;
+    }
+    .title {
+        width: 100%;
+    }
+    .post-item-container {
+        width: 30%;
+    }
+    #head-left-post-container {
+        border-right: 1px solid #5c0404;
+    }
+    #video-posts {
+        padding: 0 6em;
+        gap: 20px;
+    }
+    .business-post-msg {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px) {
+   header {
+    flex-direction: column;
+   }
+   #header-nav {
+        display: none;
+   }
+   .intro-quote {
+    width: 70%;
+   }
+   #head-post-container {
+    flex-wrap: wrap;
+   }
+   #head-left-post-container, #head-right-post {
+    width: 100%;
+   }
+   .read-more {
+    width: 40%;
+   }
+   .post-container {
+    flex-direction: column;
+   }
+   .post-item-container {
+    width: 100%;
+    max-width: 100%;
+   }
+   #event-container {
+    flex-direction: column;
+   }
+   .event-side-container {
+    width: 100%;
+    border-right: none;
+   }
+   .event-middle-container {
+    width: 100%;
+   }
+   .bg-middle-overlay {
+    padding: 10px;
+   }
+   #middle-button {
+    width: 70%;
+   }
+   .margin-top {
+    border-bottom: 1px solid #5c0404;
+    padding-bottom: 10px;
+   }
+   .right-border {
+    border-left: none;
+    border-top: 1px solid #5c0404;
+    padding-top: 10px;
+   }
+   .view-more-button {
+    padding: 10px;
+   }
+   #video-posts {
+    flex-direction: column;
+    padding: 0 30px;
+   }
+   #video-posts div:nth-child(1) {
+    width: 100%;
+   }
+   video {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+   #footer-nav-container {
+    display: none;
+   }
+   #footer-line {
+    display: none;
+   }
+   #footer-items-container {
+    flex-direction: column;
+    gap: 10px;
+   }
+   .footer_social_links {
+    display: flex;
+    justify-content: space-between;
+   }
+   .legal_border {
+    border-top: 1px solid #5c0404;
+    border-bottom: 1px solid #5c0404;
+    padding: 20px 0;
+   }
+   .legal_links {
+    display: flex;
+    justify-content: space-between;
+   }
+   h5 {
+    color: black;
+   }
+   .about {
+    width: 100%;
+   }
+   .about p {
+    margin-top: 10px;
+   }
+   #copyright {
+    font-size: 13px;
+    font-style: italic;
+   }
 }

@@ -219,74 +219,8 @@ h5 {
     letter-spacing: 1px;
 }
 #copyright {
+    display: flex;
+    justify-content: space-between;
     padding: 20px 10px;
     background-color: rgba(59, 59, 59, 0.2);
-}
-.copyright-text {
-    text-align: center;
-}
-@media (min-width: 768px) and (max-width: 1199px){
-    header {
-        flex-wrap: wrap;
-        padding: 0 20px;
-    }
-    #header-nav {
-        order: 3;
-        margin: auto;
-    }
-    .search-socials {
-        order: 2;
-    }
-    .legal_links {
-        display: flex;
-        flex-direction: column;
-       gap: 15px;
-    }
-}
-@media (max-width: 767px) {
-    .tech-main {
-        flex-direction: column;
-    }
-    .main-left {
-        max-width: 100%;
-    }
-    .main-right {
-        border-left: none;
-    }
-    #footer-nav-container {
-        display: none;
-       }
-       #footer-line {
-        display: none;
-       }
-       #footer-items-container {
-        flex-direction: column;
-        gap: 10px;
-       }
-       .footer_social_links {
-        display: flex;
-        justify-content: space-between;
-       }
-       .legal_border {
-        border-top: 1px solid #5c0404;
-        border-bottom: 1px solid #5c0404;
-        padding: 20px 0;
-       }
-       .legal_links {
-        display: flex;
-        justify-content: space-between;
-       }
-       h5 {
-        color: black;
-       }
-       .about {
-        width: 100%;
-       }
-       .about p {
-        margin-top: 10px;
-       }
-       #copyright {
-        font-size: 13px;
-        font-style: italic;
-       }
 }
