@@ -27,27 +27,37 @@ a {
 li {
     list-style-type: none;
 }
-#header-nav li a {
+.header-nav li a {
     color: #000;
     border-top: 1px solid #b10b0b;
     transition: border-top-width 300ms linear;
 }
-#header-nav li a:hover {
+.header-nav li a:hover {
     color: #b10b0b;
     border-top-width: 5px;
 }
-#header-nav {
+.header-nav {
     display: flex;
     gap: 2em;
     align-items: center;
     justify-content: center;
     font-size: 1.3em;
 }
-input[type='search'] {
+.input_text {
+    width: 40px;
+    transition: width 0.5s linear;
+}
+.toggle_search {
+    width: 100%;
+    transform-origin: right center;
+    transition: width 1s linear;
+}
+.input_trans {
     border: 1px solid #5c0404;
     border-radius: 20px;
     padding: 5px;
-}
+    display: block;
+}    
 .search-socials {
     display: flex;
 }
@@ -73,6 +83,9 @@ input[type='search'] {
 #socials {
     display: flex;
     align-items: center;
+}
+.fa-bars {
+    display: none;
 }
 main {
     margin-top: 90px;
@@ -111,7 +124,7 @@ h4 {
     margin-top: 20px;
     background-color: #fff;
     border: 1px solid #5c0404;
-    transition-duration: background-color  500ms linear;
+    transition-duration: background-color  1000ms linear;
 }
 .read_more:hover {
     cursor: pointer;
@@ -240,10 +253,36 @@ h5 {
     .legal_links {
         display: flex;
         flex-direction: column;
-       gap: 15px;
+        gap: 15px;
     }
 }
 @media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #cfcfcf;
+        padding: 15px;
+        border: 1px solid #5c0404;
+        border-radius: 8px;
+        gap: 9px;
+        position: absolute;
+        top: 28px;
+        right: 15px;
+    }
+    .header-nav-display {
+        display: flex;
+    }
+    .fa-bars {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #5c0404
+    }
     .tech-main {
         flex-direction: column;
     }
@@ -252,6 +291,11 @@ h5 {
     }
     .main-right {
         border-left: none;
+    }
+    .read_more {
+        width: 70%;
+        margin: 0 15%;
+        margin-top: 20px;
     }
     #footer-nav-container {
         display: none;

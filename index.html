@@ -11,7 +11,8 @@
 <body>
     <header>
         <img class="logo" alt="Logo" src="">
-        <nav id="header-nav">
+        <i class="fa fa-bars"></i>
+        <nav class="header-nav">
             <li><a href="./tech_page.html">Technology</a></li>
             <li><a href="./nature_page.html">Nature</a></li>
             <li><a href="./business_page.html">Business</a></li>
@@ -19,7 +20,7 @@
             <li><a href="">Videos</a></li>
         </nav>
         <div class="search-socials">
-            <input type="search" value="search...">
+            <input type="search" placeholder="search..." class="input_text input_trans">
             <i class="fa fa-search"></i>
             <div id="socials">
                 <a href="" class="fa-brands fa-twitter"></a>
@@ -42,12 +43,12 @@
                 <div class="left-post">
                     <img class="head-post-img" src="https://images.stockcake.com/public/8/0/1/8018559a-eb18-4f01-9cdf-c250bbbad7c1_large/vr-learning-experience-stockcake.jpg" alt="head-post-img">
                     <div class="head-item-container">
-                        <div class="title">
+                        <div class="title tech_title">
                         <a href="./tech_page.html"><h4>Technology</h4></a>
                         <i class="fa fa-rocket"></i>
                         </div>
                         <p class="head-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="" class="learn-more">Learn More<i class="fa fa-arrow-right"></i></a>
+                        <a href="./tech_post.html" class="learn-more">Learn More<i class="fa fa-arrow-right"></i></a>
                         <p class="authur">NBA June 23, 2024</p>
                     </div>
                 </div>
@@ -59,7 +60,7 @@
                             <i class="fa fa-leaf"></i>
                         </div>
                         <p class="head-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="" class="learn-more">Learn More<i class="fa fa-arrow-right"></i></a>
+                        <a href="./nature_page.html" class="learn-more">Learn More<i class="fa fa-arrow-right"></i></a>
                         <p class="authur">NBA June 23, 2024</p>
                     </div>
                 </div>
@@ -70,7 +71,7 @@
                     <i class="fa fa-rocket"></i>
                 </div>
                 <p class="rigt-post-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus</p>
-                <button class="read-more">Read More <i class="fa fa-arrow-right"></i></button>
+                <button class="read-more"><a href="./tech_page.html">Read More</a> <i class="fa fa-arrow-right"></i></button>
                 <p class="authur">NBA June 23, 2024</p>
             </div>
         </div>
@@ -218,5 +219,6 @@
             <p class="copyright-text">Copyright © 2024 NBA</p>
         </div>
     </footer>
+    <script src="./script/index_script.js"></script>
 </body>
 </html>
