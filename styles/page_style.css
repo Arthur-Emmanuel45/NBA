@@ -105,32 +105,6 @@ a.recent_post_items:hover, .categories_post_container a:hover {
     }
 }
 @media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .header-nav {
-        display: none;
-        flex-direction: column;
-        background-color: #cfcfcf;
-        padding: 15px;
-        border: 1px solid #5c0404;
-        border-radius: 8px;
-        gap: 9px;
-        position: absolute;
-        top: 28px;
-        right: 15px;
-    }
-    .header-nav-display {
-        display: flex;
-    }
-    .fa-bars {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        color: #5c0404
-    }
     .tech-main {
         flex-direction: column;
     }
