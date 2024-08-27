@@ -58,8 +58,9 @@ li {
     transition: width 1s linear;
 }
 .input_trans {
-    border: 1px solid #5c0404;
+    border: 1px solid #c4c4c4;
     border-radius: 20px;
+    background-color: #f3f0f0;
     padding: 5px;
     display: block;
 }    
