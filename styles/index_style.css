@@ -251,8 +251,13 @@ h2 {
     margin: 20px 0;
     background-color: #5c0404;
     border: none;
-    cursor: pointer;
     color: #fff;  
+}
+#middle-button a{
+    color: #fff;
+}
+#middle-button a:hover {
+    color: #9a9a9a;
 }
 .left-border {
     border-right: 1px solid #5c0404;
